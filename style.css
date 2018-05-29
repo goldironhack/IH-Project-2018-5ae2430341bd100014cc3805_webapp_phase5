@@ -1,7 +1,25 @@
 body {
-    color: #444;
+    background: url(https://images.pexels.com/photos/952354/pexels-photo-952354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center center cover no-repeat fixed;
+    color: #778;
     font-family: Arial, sans-serif;
 }
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  }
+}
+
+  #map {
+    height: 100%;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
 
 .container {
     width: 100%;

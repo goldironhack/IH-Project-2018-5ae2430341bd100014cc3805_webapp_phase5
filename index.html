@@ -6,10 +6,95 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
-    </div>
-    <script src="index.js"></script>
+    <H2>Indique aquí lo que está buscando! </H2>
+    <P>Tipo de vivienda:</P>
+    <FORM name="checkbox" action="Null" method="POST" target="resultado">      
+      <P>
+      <INPUT type="checkbox" name="sistoper" value="Familiar" checked>Familiar<BR>
+      <INPUT type="checkbox" name="sistoper" value="Residencias estudiantiles">Residencias estudiantiles<BR>
+      <INPUT type="checkbox" name="sistoper" value="Apartamento">Apartamento<BR>
+      <INPUT type="checkbox" name="sistoper" value="Cuarto independiente" checked>Cuarto independiente<BR>
+      <INPUT type="checkbox" name="sistoper" value="Apartaestudio" checked>Apartaestudio
+      </P>
+      <INPUT type="submit" value="Enviar">   <INPUT type="reset" value="Borrar">
+    </FORM>
+    <HR>
+    
+    <H2>Es importante para nosotros! </H2>
+    <P>Indique su estado civil:</P>
+    <FORM name="radio_buttons" action="null" method="POST" target="resultado">      
+      <P>
+      <INPUT type="radio" name="estado" value="Soltero">Soltero/a<BR>
+      <INPUT type="radio" name="estado" value="Casado" checked>Casado/a<BR>
+      <INPUT type="radio" name="estado" value="Viudo">Viudo/a<BR>
+      <INPUT type="radio" name="estado" value="Otros">Otros
+      <INPUT type="submit" value="Enviar">   <INPUT type="reset" value="Borrar">
+      </P>
+    </FORM>
+    
+    <P>Sexo: :</P>
+    <FORM name="radio_buttons" action="null" method="POST" target="resultado">      
+      <P>
+      <INPUT type="radio" name="estado" value="Hombre">Hombre/a<BR>
+      <INPUT type="radio" name="estado" value="Mujer" checked>Mujer/a<BR>
+      <INPUT type="radio" name="estado" value="Otro">Otro
+      </P>
+      <INPUT type="submit" value="Enviar">   <INPUT type="reset" value="Borrar">
+    </FORM>
+    
+    <P>¿Te gustan las mascotas? </P>
+    <FORM name="radio_buttons" action="null" method="POST" target="resultado">      
+      <P>
+      <INPUT type="radio" name="estado" value="Si">Si/a<BR>
+      <INPUT type="radio" name="estado" value="No" checked>No/a<BR>
+      <INPUT type="radio" name="estado" value="No interesa">No interesa
+      </P>
+      <INPUT type="submit" value="Enviar">   <INPUT type="reset" value="Borrar">
+    </FORM>
+    
+    <P> Servicios de hogar </P>
+    <FORM name="radio_buttons" action="null" method="POST" target="resultado">      
+      <P>
+      <INPUT type="radio" name="estado" value="Cable">Cable/a<BR>
+      <INPUT type="radio" name="estado" value="Internet" checked>Internet/a<BR>
+      <INPUT type="radio" name="estado" value="Salones de ocio"> Salones de ocio
+      <INPUT type="radio" name="estado" value="Comidas"> Comidas
+      <INPUT type="radio" name="estado" value="Centros Comerciales"> Centros Comerciales
+      <INPUT type="radio" name="estado" value="Bibliotecas"> Bibliotecas
+      </P>
+      <INPUT type="submit" value="Enviar">   <INPUT type="reset" value="Borrar">
+    </FORM>
+    
+    
+    
+    
+    <title>}- Mapa -</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+/
+      #map {
+        height: 100%;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+ 
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.67, lng:  -73.94},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJZZ_2s2Yuq02EsL3WH6lKQSP466EwvtQ&callback=initMap"
+    async defer></script>
+   
 </body>
 </html>
